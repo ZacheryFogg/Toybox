@@ -22,6 +22,12 @@ try:
         entry_point='toybox.envs.atari:SpaceInvadersEnv',
         nondeterministic=False
     )
+    
+    register(
+        id='PacmanToyboxNoFrameskip-v4',
+        entry_point='toybox.envs.atari:PacmanEnv',
+        nondeterministic=False
+    )
 
     print("Registered Toybox environments with gym.")
 
